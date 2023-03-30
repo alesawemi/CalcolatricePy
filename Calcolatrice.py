@@ -1,3 +1,5 @@
+
+
 from math import sqrt
 
 hello_message = """
@@ -55,5 +57,14 @@ while True:
     elif action == "ESC":
         print("\nL'Applicazione verrà chiusa!\n")
         break
+    
+new_action = input("\nDesideri continuare ad utilizzare l'Applicazione? S/N ")
+    if new_action == "S" or new_action == "s":
+        print("Sto tornando al menù principale!\n")
+        continue
+    else:
+        print("A presto!\n")
+        break
+
 
 
